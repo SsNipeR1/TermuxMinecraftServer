@@ -1,0 +1,2 @@
+pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh
+./start-ubuntu.sh apt update && apt upgrade && apt install wget && wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -zxvf ngrok-stable-linux-arm64.tgz && echo KEY FROM https://dashboard.ngrok.com/get-started/setup && read ngrokkey && ./ngrok authtoken $ngrokkey && ./ngrok tcp 25565
